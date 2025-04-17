@@ -68,26 +68,26 @@ const page = ({ params }) => {
                                                 beyond?
                                             </p>
                                             <p>
-                                                EduTune’s Abacus Course offers a unique opportunity to develop
+                                                EduTune Abacus Course offers a unique opportunity to develop
                                                 essential math skills while fostering confidence and mental
                                                 agility.Abacus training is proven to enhance cognitive
                                                 abilities, including concentration, memory, and
                                                 problem-solving skills.
                                             </p>
                                             <p>
-                                                Here's what your child will gain from the “Abacus Math”
+                                                Herewhat your child will gain from the Abacus Math
                                                 program:
                                             </p>
                                             <ol>
                                                 <li>
                                                     Master Math Concepts: Through hands-on manipulation of the
-                                                    abacus beads, children develop a deep understanding of
+                                                    abacus beads children develop a deep understanding of
                                                     arithmetic operations such as addition, subtraction,
                                                     multiplication, and division.
                                                 </li>
                                                 <li>
                                                     Speed and Accuracy: As children progress in the course,
-                                                    they'll learn to perform complex calculations with lightning
+                                                    they ll learn to perform complex calculations with lightning
                                                     speed and precision, setting them apart in math competitions
                                                     and exams.
                                                 </li>
@@ -208,7 +208,7 @@ const page = ({ params }) => {
                                             <div className="col-md-12 p-0">
                                                 <h4 style={{ color: "#3c4852" }}>How to pay?</h4>
                                                 <p style={{ fontWeight: 400 }}>
-                                                    Below the course, click the 'Enroll Course' button to start
+                                                    Below the course click the Enroll Course button to start
                                                     your payment process. Watch this video to learn more about
                                                     the payment details.
                                                 </p>

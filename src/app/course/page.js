@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import HeroSection from '@/componants/Common/HeroSection';
 import styles from '../../styles/Course.module.css';
 import SkeletonCard from '@/componants/Common/SkeletonCard';
+import Image from 'next/image';
 
 const allCourses = [
     {
