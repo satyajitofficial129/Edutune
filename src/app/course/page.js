@@ -4,6 +4,9 @@ import HeroSection from '@/componants/Common/HeroSection';
 import styles from '../../styles/Course.module.css';
 import SkeletonCard from '@/componants/Common/SkeletonCard';
 import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
 
 const allCourses = [
     {
@@ -109,7 +112,6 @@ const allCourses = [
 const categories = ['Web Development', 'Graphic Design', 'Data Science', 'Digital Marketing', 'UI/UX Design'];
 
 const options = ['All Course', 'Live Course', 'Recorded Course', 'Free Course'];
-
 const renderSkeleton = () => Array.from({ length: 6 }).map((_, index) => <SkeletonCard key={index} />);
 
 const CourseList = () => {
@@ -151,6 +153,16 @@ const CourseList = () => {
             prev.includes(value) ? prev.filter((cat) => cat !== value) : [...prev, value]
         );
     };
+    const pathname = usePathname();
+    const slugify = (text) =>
+        text
+            .toLowerCase()
+            .trim()
+            .replace(/[^a-z0-9\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-');
+    useEffect(() => {
+    }, [pathname]);
     return (
         <>
             <HeroSection />
@@ -220,7 +232,7 @@ const CourseList = () => {
                                                         <span className="class-fee">{course.price}</span>
                                                         <span className="kb-class-tooltip-1">One Time Fees</span>
                                                     </div>
-                                                    <a href={course.link}>
+                                                    <a>
                                                         <Image
                                                             alt="Thumbnail"
                                                             src={course.image}
@@ -233,12 +245,16 @@ const CourseList = () => {
                                                     </a>
                                                 </div>
                                                 <div className="part-txt p-40 px-30" style={{ minHeight: 280 }}>
-                                                    <a href={course.link} className="class-catname bg-theme symbol">
+                                                    <a className="class-catname bg-theme symbol">
                                                         {course.type}
                                                     </a>
-                                                    <h3 style={{ height: 60 }} className="class-title mt--7 mb-6 name">
-                                                        <a href={course.link}>{course.title}</a>
-                                                    </h3>
+                                                    <Link href={`/course/${slugify(course.title)}`} legacyBehavior>
+                                                        <a>
+                                                            <h3 style={{ height: 60 }} className="class-title mt--7 mb-6 name">
+                                                            {course.title}
+                                                            </h3>
+                                                        </a>
+                                                    </Link>
                                                     <p className="mt--8 mb--8">{course.description}</p>
                                                     <div className="class-info mt-30 d-flex justify-content-between">
                                                         <div className="box box-1 text-center">

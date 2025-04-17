@@ -587,8 +587,7 @@ const page = ({ params }) => {
                                                 <div className="section-question-img">
                                                     <Image
                                                         alt="Thumbnail"
-                                                        src="https://amadereshkul.s3-ap-southeast-1.amazonaws.com/4394ac/bda43601-2d16-4f14-9bd5-2fa215b18270/171344163814536180866210b6637fb6.png"
-                                                        width={800}
+                                                        src="/images/172095693418547859776693b8066ca10.png"width={800}
                                                         height={450}
                                                         layout="responsive"
                                                         className=""

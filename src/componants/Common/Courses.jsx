@@ -5,13 +5,24 @@ import styles from "./../../styles/Skeleton.module.css";
 import axios from "axios";
 import SkeletonCard from "./SkeletonCard";
 import SectionHeading from "./SectionHeading";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const PopularCourses = () => {
   const [activeCategory, setActiveCategory] = useState("*");
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
   const sectionRef = useRef(null);
-
+      const pathname = usePathname();
+      const slugify = (text) =>
+          text
+              .toLowerCase()
+              .trim()
+              .replace(/[^a-z0-9\s-]/g, '')
+              .replace(/\s+/g, '-')
+              .replace(/-+/g, '-');
+      useEffect(() => {
+      }, [pathname]);
   const handleFilterClick = (category) => {
     setActiveCategory(category);
   };
@@ -99,9 +110,14 @@ const PopularCourses = () => {
                     </div>
                     <div className="part-txt p-40 px-30" style={{ minHeight: 280 }}>
                       <a href={course.link} className="class-catname bg-theme symbol">Live</a>
-                      <h3 style={{ height: 60 }} className="class-title mt--7 mb-6 name">
-                        <a href={course.link}>{course.title}</a>
-                      </h3>
+                      <Link href={`/course/${slugify(course.title)}`} legacyBehavior>
+                        <a>
+                          <h3 style={{ height: 60 }} className="class-title mt--7 mb-6 name">
+                            {course.title}
+                          </h3>
+                        </a>
+                      </Link>
+
                       <p className="mt--8 mb--8">{course.description}</p>
                       <div className="class-info mt-30 d-flex justify-content-between">
                         <div className="box box-1 text-center">
