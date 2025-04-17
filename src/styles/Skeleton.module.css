@@ -1,0 +1,56 @@
+/* Skeleton.module.css */
+
+.skeletonCard {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .skeletonBlock {
+    background-color: #e2e2e2;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite ease-in-out;
+    margin-bottom: 12px;
+  }
+  
+  .skeletonImage {
+    height: 180px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .skeletonTitleShort {
+    height: 20px;
+    width: 30%;
+  }
+  
+  .skeletonTitle {
+    height: 20px;
+    width: 80%;
+  }
+  
+  .skeletonLine {
+    height: 15px;
+    width: 100%;
+  }
+  
+  .skeletonHalfLine {
+    height: 15px;
+    width: 50%;
+    margin-bottom: 0;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #eee;
+    }
+    50% {
+      background-color: #ddd;
+    }
+    100% {
+      background-color: #eee;
+    }
+  }
+  

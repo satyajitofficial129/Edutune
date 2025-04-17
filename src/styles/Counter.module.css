@@ -1,0 +1,31 @@
+.countdownBg {
+    margin-bottom: 100px;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .countdownItem {
+    padding: 50px 0;
+  }
+  
+  .countdownItem .number {
+    color: #fff;
+    font-family: "Fredoka One", cursive;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  
+  .countdownItem p:last-child {
+    color: #fff;
+    font-family: "Fredoka One", cursive;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .countdownItemBorder {
+    border-left: 1px solid #b5eae0;
+    border-right: 1px solid #b5eae0;
+  }
+  

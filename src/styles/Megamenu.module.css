@@ -1,0 +1,150 @@
+.dropdownMain {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    background-color: #ffffff;
+    z-index: 999;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdownActive {
+    transform: translateY(0%);
+    opacity: 1;
+    pointer-events: auto;
+    padding: 20px;
+  }
+  .headerContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .headerLeft,
+  .headerRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .straightLine {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 5px;
+    flex-grow: 1; /* this is key! */
+  }
+  
+  .headerContent h2,
+  .bodyContent h2 {
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+  }
+  .categoryItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 15px;
+    margin-bottom: 8px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.6s ease, color 0.6s ease, box-shadow 0.6s ease;
+  }
+  .categoryItem:hover{
+    border: 1px solid #101828;;
+  }
+  .categoryName{
+    font-weight: 600;
+  }
+  
+  .activeCategory {
+    background-color: #662d91;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+  }
+  
+  .categoryItem i {
+    font-size: 18px;
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  .scrollableContent {
+    padding: 15px;
+    background-color: #f9f9f9b9;
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 8px;
+  }
+  
+  /* Custom scrollbar */
+  .scrollableContent::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollableContent::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+  }
+  
+  .scrollableContent::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+  .courseItem {
+    margin-bottom: 16px;
+  }
+  
+  .courseCard {
+    display: flex;
+    gap: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    cursor: pointer;
+  }
+  .courseCard:hover{
+    border:1px solid black;
+  }
+  
+  .courseImage {
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .courseDetails {
+    flex: 1;
+  }
+  
+  .courseTitle {
+    font-size: 16px;
+  }
+  
+  .courseDesc {
+    display: block;
+    margin-top: 2px;
+  }
+  
+  .courseMeta {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  
+  

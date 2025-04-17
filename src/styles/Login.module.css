@@ -1,0 +1,105 @@
+/* Login.module.css */
+
+.signBox {
+    width: 100%;
+    max-width: 322px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #d8e2e7;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1rem;
+    position: relative;
+}
+
+.signAvatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+}
+
+.signAvatar img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.signAvatarNoPhoto {
+    border: 2px solid #c5d6de;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 96px;
+    color: #c5d6de;
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+.signTitle {
+    font-size: 16px !important;
+    text-align: center;
+    margin: 0 0 15px;
+    line-height: normal;
+}
+
+.btn {
+    display: block;
+    min-width: 108px;
+    margin: 16px auto 12px;
+}
+
+.btnSignUp {
+    margin-top: 18px;
+}
+
+.signNote {
+    text-align: center;
+}
+
+.signBox a {
+    text-decoration: none;
+    color: #0082c6;
+    border-bottom: solid 1px transparent;
+}
+
+.signBox a:hover {
+    border-bottom-color: rgba(0, 130, 198, 0.5);
+}
+
+.formGroup {
+    margin-bottom: 12px;
+    zoom: 1;
+}
+
+.checkbox {
+    margin: 0;
+}
+
+.checkbox label,
+.reset {
+    font-size: 0.875rem;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    opacity: 1;
+    color: #c5d6de;
+}
+
+.close:hover {
+    color: #00a8ff;
+}
+
+.resetPasswordBox .btn {
+    display: inline-block !important;
+    margin: 10px 10px 12px auto;
+}
+
+.resetPasswordBox a {
+    display: inline-block;
+    margin-left: 4px;
+}
+.headerText{
+    font-size: 16px !important;
+}
