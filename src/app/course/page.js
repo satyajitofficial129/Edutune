@@ -220,11 +220,15 @@ const CourseList = () => {
                                                         <span className="kb-class-tooltip-1">One Time Fees</span>
                                                     </div>
                                                     <a href={course.link}>
-                                                        <img
+                                                        <Image
                                                             alt="Thumbnail"
                                                             src={course.image}
+                                                            width={800}
+                                                            height={450}
+                                                            layout="responsive"
                                                             className="w-100 courseBannerImage img-fluid"
                                                         />
+
                                                     </a>
                                                 </div>
                                                 <div className="part-txt p-40 px-30" style={{ minHeight: 280 }}>
