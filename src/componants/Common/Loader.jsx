@@ -9,7 +9,7 @@ const Loader = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setPreloaderloader(false);
-        }, 3000000); 
+        }, 3000); 
         return () => clearTimeout(timer);
     }, []);
 
