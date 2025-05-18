@@ -9,7 +9,7 @@ const Loader = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setPreloaderloader(false);
-        }, 3000); 
+        }, 3000000); 
         return () => clearTimeout(timer);
     }, []);
 
@@ -19,9 +19,9 @@ const Loader = () => {
                 <div className={styles.loadingCenter}>
                     <div className={styles.loadingCenterAbsolute}>
                         <div className={styles.loadingContent}>
-                            <img className={styles.loadingLogoText} src="/images/logo/logo-text.png"
+                            <img className={styles.loadingLogoText} src="/images/edutune-loader.gif"
                                 alt="Kidba" />
-                            <div className={styles.loadingStroke}></div>
+                            {/* <div className={styles.loadingStroke}></div> */}
                         </div>
                     </div>
                 </div>
